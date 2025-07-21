@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>links</title>
+    <style>
+
+        /* 
+        # = id
+        . = classe
+        : = pseudo-classe
+        :: = pseudo-elemento
+        > = filho direto
+        */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+        ul {
+            list-style-type: none; /* Remove os marcadores da lista */
+            padding: 0; /* Remove o preenchimento padrão */
+        }
+        li {
+            margin: 10px 0; /* Espaçamento entre os itens da lista */
+        }
+        a {
+            color: #ff2306; /* Cor do link */
+            text-decoration: none; /* Remove o sublinhado dos links */
+            font-weight: bold; /* Deixa o texto do link em negrito */
+           
+           
+        }
+        a:hover
+     {
+            text-decoration: underline; /* Sublinha o link ao passar o mouse */
+            color: #000000; /* Cor do link ao passar o mouse */
+            
+        }
+        a:visited
+        /* Cor do link visitado */{ 
+            color: #0000ff; /* Cor do link visitado */
+            
+        }
+        a:active
+        /* Cor do link ativo */{
+            color: #ff0000; /* Cor do link ativo */
+        }
+        .especial::before
+        /* Adiciona um ícone antes do link */{
+            content: "🔗 "; /* Ícone de link */
+            font-size: 1.2em; /* Tamanho do ícone */
+        }
+    .especial::after {
+            content: " 🔗"; /* Texto adicional após o link */
+            font-size: 1,2em; /* Tamanho do texto adicional */
+            color: #555; /* Cor do texto adicional */
+            
+        }
+        </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://github.com/gustavoguanabara#:~:text=Navigation%20Menu-,gustavoguanabara,-Overview" class="especial">Repositorio GitHub</a></li>
+        <li><a href="https://youtu.be/nlO5hySqJFA?si=oVwyoz9eWhKYLzQU">Canal do YouTube</a></li>
+        <li><a href="http://www.cursoemvideo.com">Curso de HTML5 e CSS3</a></li>
+    </ul>
+</body>
+</html>

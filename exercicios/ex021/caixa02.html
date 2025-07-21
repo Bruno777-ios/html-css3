@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grouping tags</title>
+    <link rel="shortcut icon" href="gojo.webp" type="image/x-icon">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0px;
+            background-color: #5c5959;
+        }
+        header {
+            background-color: #ffffff;
+            padding: 10px 20px;
+            margin: 10px;
+        }
+        
+        nav{
+            background-color: #3a3939;
+            padding: 3px;
+            color: white;
+            box-shadow: 4px 4px 9px rgb(0, 0, 0);
+        }
+        nav > a {
+            color: white;
+            text-decoration: none;
+            margin-right: 10px;
+        }
+        main {
+            background-color: #f0f0f0;
+            margin: 20px;
+            padding: 10px;
+            border-radius: 10px 0px; /* Arredondamento do canto superior esquerdo */
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        nav > a:hover {
+            text-decoration: underline;
+        }
+        article {
+            background-color: #696969;
+            padding: 5px;
+        }
+        article > aside {
+            background-color: #d3d3d3;
+        }
+        footer {
+            background-color: #1a1919;
+            color: white;
+            text-align: center;
+            padding: 1px;
+            margin: 0px;
+        }</style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="">link</a>
+            <a href="">link</a>
+            <a href="">link</a>
+            <a href="">link</a>
+            <a href="">link</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <section id ="caixa01">
+                <article>
+                    <h2>Noticias sobre o Brasil</h2>
+                    <p>Este é o conteúdo da caixa 01.</p>
+                    <aside>
+                        <p>Artigo escrito por Jose da silva</p>
+                    </aside>
+                </article>
+        </section>
+    </main>
+    <footer>
+        <p>Todos os direitos reservados &copy; 2023</p>
+    </footer>
+</body>
+</html>
